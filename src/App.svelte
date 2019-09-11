@@ -21,28 +21,26 @@
 
 h1 {
 	color: purple;
+	font-family: 'kalam';
 }
 
-.grid {
+.container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-	grid-gap: 20px;
-	align-items: stretch;
+	grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+	grid-gap: 15px;
 }
 
-.grid>article {
+/*.container > .card {
 	border: 1px solid #ccc;
 	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
+}*/
 
-.grid>article img {
+.container > .card img {
 	max-width: 100%;
 }
 
-.grid .text {
-	padding: 20px;
-}
+
 
 </style>
 
@@ -54,17 +52,17 @@ h1 {
 </h1>
 
 <div class="container">
-	<main class="grid">
+
 		{#each articles as article}
-			<article>
+			<div class="card">
 				<img src="{article.urlToImage}">
-				<div class="text">
+				<div class="card-body">
 					<h3>{article.title}</h3>
 					<p> {article.description} </p>
 					<a href="{article.url}">Read story</a>
 				</div>
-			</article>
+			</div>
 		{/each}
-	</main>
+
 </div>
 
