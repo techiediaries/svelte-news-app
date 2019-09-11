@@ -30,12 +30,6 @@ h1 {
 	grid-gap: 15px;
 }
 
-/*.container > .card {
-	border: 1px solid #ccc;
-	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-}*/
-
 .container > .card img {
 	max-width: 100%;
 }
